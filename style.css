@@ -1,0 +1,16 @@
+body{
+    text-align:center;
+    background-color:blue;
+}
+#p_button{
+    height:40px;
+    width:60px;
+    font-size:10px;
+}
+#p1_inputs{
+    width:49%;
+    margin-left:320px;
+}
+#p2_inputs{
+    width:49%;
+}

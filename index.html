@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>Project 80</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h3>
+          <span>
+            <div id="p1_inputs">
+                <span> 1 </span>
+                <span>
+                <input type="text" id="p1_input_box_1" placeholder="Input box 1">
+            </span>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+                <span> 1 </span>
+                <input type="text" id="p2_input_box_1" placeholder="Input box 1">
+                <br>
+                <br>
+                <span> 2 </span>
+                <span>
+                <input type="text" id="p1_input_box_2" placeholder="Input box 1">
+            </span>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+                <span> 2 </span>
+                <input type="text" id="p2_input_box_2" placeholder="Input box 1">
+                <br>
+                <br>
+                <span> 3 </span>
+                <span>
+                <input type="text" id="p1_input_box_3" placeholder="Input box 1">
+            </span>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+                <span> 3 </span>
+                <input type="text" id="p2_input_box_3" placeholder="Input box 1">
+                <br>
+                <br>
+                <span> 4 </span>
+                <span>
+                <input type="text" id="p1_input_box_4" placeholder="Input box 1">
+            </span>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+                <span> 4 </span>
+                <input type="text" id="p2_input_box_4" placeholder="Input box 1">
+                <br>
+                <br>
+            <span> 5 </span>
+                <span>
+                <input type="text" id="p1_input_box_5" placeholder="Input box 1">
+            </span>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+                <span> 5 </span>
+                <input type="text" id="p2_input_box_5" placeholder="Input box 1">
+                <br>
+                <br>
+                <span> 6 </span>
+                <span>
+                <input type="text" id="p1_input_box_6" placeholder="Input box 1">
+            </span>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+                <span> 6 </span>
+                <input type="text" id="p2_input_box_6" placeholder="Input box 1">
+                <br>
+                <br>
+            </div>
+        </span>
+        </h3>
+        <h4>
+            <div>
+            <button id="p_button1" onclick="get_paragraph_1()">Get Paragraph 1</button>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <button id="p_button2" onclick="get_paragraph_2()">Get Paragraph 2</button>
+        </div>
+        </h4>
+        <h5>
+            <div>
+            <div id="display_p1"></div>
+            <br>
+            <br>
+            <div id="display_p2"></div>
+        </div>
+        </h5>
+    </body>
+    <script>
+        function get_paragraph_1() {
+    var input=[];
+    for (var i = 1 ; i<=6 ; i++){
+        input.push(document.getElementById("p1_input_box_" + i).value);
+        input.join(". ");
+        document.getElementById("display_p1").innerHTML = input.join(". ");
+   }
+}
+function get_paragraph_2() {
+    var input=[];
+    for (var i = 1 ; i<=6 ; i++){
+        input.push(document.getElementById("p2_input_box_" + i).value);
+        input.join(". ");
+        document.getElementById("display_p2").innerHTML = input.join(". ");
+   }
+}
+    </script>
+</html>
